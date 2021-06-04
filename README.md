@@ -1,6 +1,6 @@
-# {{project_name}}
+# The effect of COVID-19 pandemic on Antimicrobial stewardship
 
-This is the code and configuration for {{project_name}}
+This is the code and configuration for "The effect of COVID-19 pandemic on Antimicrobial stewardship" work.
 
 * The paper is [here]()
 * Raw model outputs, including charts, crosstabs, etc, are in `released_outputs/`
