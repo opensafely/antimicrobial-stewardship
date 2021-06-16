@@ -23,7 +23,7 @@ from cohortextractor import (
 from codelists import *
   
   
-# --- DEFINE STUDY POPULATION ---
+# DEFINE STUDY POPULATION ---
   
 ## Define study time variables
 from datetime import datetime
@@ -94,7 +94,7 @@ study = StudyDefinition(
     between = ["index_date", "last_day_of_month(index_date)"],
     returning = "code",
     return_expectations = {"category": {
-      "ratios": {str(321589009): 0.8, str(321590000): 0.2}}, }
+      "ratios": {str(417576009): 0.9, str(699840007): 0.1}}, }
   ),
   
   ## Consultations with GP result in a antibiotic
@@ -115,7 +115,7 @@ study = StudyDefinition(
       "ratios": {str(322149009): 0.8, str(322144004): 0.2}}, }
   ),
   
-  ## Course Duration (not current possible)
+  ## Course Duration (not currently possible)
   
   
   ## Demographic and clinical sub-groups
@@ -196,7 +196,7 @@ study = StudyDefinition(
   
   ### Astma/COPD
   
-    ### Serious Mental Illness
+  ### Serious Mental Illness
   serious_mental_illness = patients.with_these_clinical_events(
     serious_mental_illness_codes,
     between = ["index_date", "last_day_of_month(index_date)"],
