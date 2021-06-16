@@ -1,0 +1,34 @@
+{
+  "files": {
+    "user-MillieGreen-delayed-prescriptions-for-antibiotics.csv": {
+      "id": "user/MillieGreen/delayed-prescriptions-for-antibiotics/2c778793",
+      "url": "https://codelists.opensafely.org/codelist/user/MillieGreen/delayed-prescriptions-for-antibiotics/2c778793/",
+      "downloaded_at": "2021-06-14 11:15:02.758270Z",
+      "sha": "d23ebb95191736df17477ac77ca76f75b2e97f12"
+    },
+    "user-MillieGreen-infection-tmp.csv": {
+      "id": "user/MillieGreen/infection-tmp/1bdef989",
+      "url": "https://codelists.opensafely.org/codelist/user/MillieGreen/infection-tmp/1bdef989/",
+      "downloaded_at": "2021-06-14 11:15:03.662593Z",
+      "sha": "e294d62239dec1ca6367bf722b94618daa4f6481"
+    },
+    "primis-covid19-vacc-uptake-longres.csv": {
+      "id": "primis-covid19-vacc-uptake/longres/v1",
+      "url": "https://codelists.opensafely.org/codelist/primis-covid19-vacc-uptake/longres/v1/",
+      "downloaded_at": "2021-06-11 12:31:13.723622Z",
+      "sha": "4d4c94b9c6aa267c6a60657150bbc5ec7d2d7625"
+    },
+    "nhsd-primary-care-domain-refsets-ld_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/ld_cod/20210127",
+      "url": "https://codelists.opensafely.org/codelist/nhsd-primary-care-domain-refsets/ld_cod/20210127/",
+      "downloaded_at": "2021-06-11 12:31:14.288095Z",
+      "sha": "0c5bc3b050a55c2090e16932fd7364a0be775cb4"
+    },
+    "nhsd-primary-care-domain-refsets-mh_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/mh_cod/20210127",
+      "url": "https://codelists.opensafely.org/codelist/nhsd-primary-care-domain-refsets/mh_cod/20210127/",
+      "downloaded_at": "2021-06-11 12:31:14.677719Z",
+      "sha": "6e98da3c8765354b47ab74d1bef4679966a337f3"
+    }
+  }
+}
