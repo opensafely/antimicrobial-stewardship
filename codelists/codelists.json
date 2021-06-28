@@ -29,6 +29,12 @@
       "url": "https://codelists.opensafely.org/codelist/nhsd-primary-care-domain-refsets/mh_cod/20210127/",
       "downloaded_at": "2021-06-11 12:31:14.677719Z",
       "sha": "6e98da3c8765354b47ab74d1bef4679966a337f3"
+    },
+    "opensafely-co-amoxiclav-cephalosporins-and-quinolones.csv": {
+      "id": "opensafely/co-amoxiclav-cephalosporins-and-quinolones/3e2c0578",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/co-amoxiclav-cephalosporins-and-quinolones/3e2c0578/",
+      "downloaded_at": "2021-06-28 14:01:23.996328Z",
+      "sha": "30133cec10771a2027648359a1f0eb0ce6ed6317"
     }
   }
 }
