@@ -56,3 +56,17 @@ broad_spectrum_antibiotics_codes = codelist_from_csv(
   system = "snomed",
   column = "dmd_id"
 )
+
+### Nitrofurantoin and trimethoprim
+nitrofurantoin_and_trimethoprim_codes = codelist_from_csv(
+  "codelists/opensafely-trimethoprim-and-nitrofurantoin.csv",
+  system = "snomed",
+  column = "dmd_id"
+)
+
+### Trimethoprim only
+trimethoprim_codes= codelist_from_csv(
+  "codelists/opensafely-trimethoprim.csv",
+  system = "snomed",
+  column = "dmd_id"
+)

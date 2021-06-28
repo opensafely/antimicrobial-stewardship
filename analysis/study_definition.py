@@ -80,13 +80,29 @@ study = StudyDefinition(
   ## Measures
   
   ## Broad spectrum antibiotics
- broad_spectrum_antibiotics_prescriptions  = patients.with_these_medications(
+  broad_spectrum_antibiotics_prescriptions  = patients.with_these_medications(
     broad_spectrum_antibiotics_codes,
     between = ["index_date", "last_day_of_month(index_date)"],
     returning = "number_of_matches_in_period",
     return_expectations = {"int" : {"distribution": "normal", "mean": 3, "stddev": 1}, "incidence" : 0.5}
   ),
   
+  ## Nitrofurantoin and trimethoprim
+  nitrofurantoin_and_trimethoprim_prescriptions  = patients.with_these_medications(
+    nitrofurantoin_and_trimethoprim_codes,
+    between = ["index_date", "last_day_of_month(index_date)"],
+    returning = "number_of_matches_in_period",
+    return_expectations = {"int" : {"distribution": "normal", "mean": 3, "stddev": 1}, "incidence" : 0.5}
+  ),
+  
+  ## Trimethoprim
+  trimethoprim_prescriptions  = patients.with_these_medications(
+    trimethoprim_codes,
+    between = ["index_date", "last_day_of_month(index_date)"],
+    returning = "number_of_matches_in_period",
+    return_expectations = {"int" : {"distribution": "normal", "mean": 3, "stddev": 1}, "incidence" : 0.5}
+  ),
+
   ## Delayed prescriptions for antibiotics
   delayed_antibiotics_prescriptions  = patients.with_these_medications(
     delayed_antibiotics_prescriptions_codes,

@@ -35,6 +35,18 @@
       "url": "https://codelists.opensafely.org/codelist/opensafely/co-amoxiclav-cephalosporins-and-quinolones/3e2c0578/",
       "downloaded_at": "2021-06-28 14:01:23.996328Z",
       "sha": "30133cec10771a2027648359a1f0eb0ce6ed6317"
+    },
+    "opensafely-trimethoprim-and-nitrofurantoin.csv": {
+      "id": "opensafely/trimethoprim-and-nitrofurantoin/251c9243",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/trimethoprim-and-nitrofurantoin/251c9243/",
+      "downloaded_at": "2021-06-28 14:33:40.609454Z",
+      "sha": "4af6569869550c9daaf0c24f07941fcdc4d3daf1"
+    },
+    "opensafely-trimethoprim.csv": {
+      "id": "opensafely/trimethoprim/0c0d1f0e",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/trimethoprim/0c0d1f0e/",
+      "downloaded_at": "2021-06-28 14:33:41.005662Z",
+      "sha": "cceecec83823c8663c40aaaf0c5158fded8a21ec"
     }
   }
 }
