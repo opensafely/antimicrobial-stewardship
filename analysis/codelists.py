@@ -70,3 +70,10 @@ trimethoprim_codes= codelist_from_csv(
   system = "snomed",
   column = "dmd_id"
 )
+
+### All antibacterials
+antibacterials_codes= codelist_from_csv(
+  "codelists/opensafely-antibacterials.csv",
+  system = "snomed",
+  column = "dmd_id"
+)

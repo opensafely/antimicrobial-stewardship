@@ -6,3 +6,4 @@ nhsd-primary-care-domain-refsets/mh_cod/20210127
 opensafely/co-amoxiclav-cephalosporins-and-quinolones/3e2c0578
 opensafely/trimethoprim-and-nitrofurantoin/251c9243
 opensafely/trimethoprim/0c0d1f0e
+opensafely/antibacterials/27089eaa

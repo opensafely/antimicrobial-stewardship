@@ -47,6 +47,12 @@
       "url": "https://codelists.opensafely.org/codelist/opensafely/trimethoprim/0c0d1f0e/",
       "downloaded_at": "2021-06-28 14:33:41.005662Z",
       "sha": "cceecec83823c8663c40aaaf0c5158fded8a21ec"
+    },
+    "opensafely-antibacterials.csv": {
+      "id": "opensafely/antibacterials/27089eaa",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/antibacterials/27089eaa/",
+      "downloaded_at": "2021-07-02 09:08:32.113198Z",
+      "sha": "f3c280d89cff832ee287f1b66a5042794f2fda27"
     }
   }
 }
