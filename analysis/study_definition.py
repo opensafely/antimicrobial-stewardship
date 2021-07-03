@@ -259,21 +259,30 @@ study = StudyDefinition(
 # --- DEFINE MEASURES ---
 
 measures = [
-  
-  ###   ## Broad spectrum antibiotics
-  
-  ## Delayed prescriptions for antibiotics
-  Measure(
-    id = "ld_antipsychotics_first_gen",
-    numerator = "antipsychotics_first_gen",
-    denominator = "population",
-    group_by = ["practice", "antipsychotics_first_gen_event_code"]
-  ),
-  
-  ## Consultations with GP result in a antibiotic
-  
-  ## Record of a coded infection clinical event on same day as an antibiotic
-  
+    ## Broad spectrum antibiotics
+    Measure(id="broad_spectrum_proportion",
+            numerator="broad_spectrum_antibiotics_prescriptions",
+            denominator="antibacterial_prescriptions",
+            group_by=["practice"]),
+
+    ## Nitrofurantoin/Trimethoprim
+    Measure(id="trimethoprim_prescriptions",
+            numerator="broad_spectrum_antibiotics_prescriptions",
+            denominator="nitrofurantoin_and_trimethoprim_prescriptions",
+            group_by=["practice"]),
+
+    ## Delayed prescriptions for antibiotics
+    Measure(
+        id="ld_antipsychotics_first_gen",
+        numerator="antipsychotics_first_gen",
+        denominator="population",
+        group_by=["practice", "antipsychotics_first_gen_event_code"]
+    ),
+
+    ## Consultations with GP result in a antibiotic
+
+    ## Record of a coded infection clinical event on same day as an antibiotic
+
 ]
 
 
