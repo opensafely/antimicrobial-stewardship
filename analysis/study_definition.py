@@ -272,12 +272,12 @@ measures = [
             group_by=["practice"]),
 
     ## Delayed prescriptions for antibiotics
-    Measure(
-        id="ld_antipsychotics_first_gen",
-        numerator="antipsychotics_first_gen",
-        denominator="population",
-        group_by=["practice", "antipsychotics_first_gen_event_code"]
-    ),
+    # Measure(
+    #     id="ld_antipsychotics_first_gen",
+    #     numerator="antipsychotics_first_gen",
+    #     denominator="population",
+    #     group_by=["practice", "antipsychotics_first_gen_event_code"]
+    # ),
 
     ## Consultations with GP result in a antibiotic
 
