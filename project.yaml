@@ -33,8 +33,8 @@ actions:
         measure_csv: output/measures/measure_*.csv
 
   plot_broad_spec_deciles:
-    run: python:latest python analysis/plot_broad_spectrum_deciles.py
+    run: python:latest python analysis/plot_deciles.py broad_spectrum_proportion
     needs: [generate_measures]
     outputs:
       moderately_sensitive:
-        cohort: output/figures/broad_spectrum_decile_chart.png
+        cohort: output/figures/broad_spectrum_proportion_decile_chart.png
