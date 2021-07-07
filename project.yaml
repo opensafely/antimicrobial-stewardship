@@ -38,3 +38,10 @@ actions:
     outputs:
       moderately_sensitive:
         cohort: output/figures/broad_spectrum_proportion_decile_chart.png
+
+  plot_trimethoprim_nitrofurantoin_deciles:
+    run: python:latest python analysis/plot_deciles.py trimethoprim_prescriptions
+    needs: [generate_measures]
+    outputs:
+      moderately_sensitive:
+        cohort: output/figures/trimethoprim_prescriptions_decile_chart.png
