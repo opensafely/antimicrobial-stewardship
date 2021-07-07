@@ -31,3 +31,10 @@ actions:
     outputs:
       moderately_sensitive:
         measure_csv: output/measures/measure_*.csv
+
+  plot_broad_spec_deciles:
+    run: python:latest python analysis/plot_broad_spectrum_deciles.py
+    needs: [generate_measures]
+    outputs:
+      moderately_sensitive:
+        cohort: output/figures/broad_spectrum_decile_chart.png
