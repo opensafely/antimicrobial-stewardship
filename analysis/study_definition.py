@@ -267,7 +267,7 @@ measures = [
 
     ## Nitrofurantoin/Trimethoprim
     Measure(id="trimethoprim_prescriptions",
-            numerator="broad_spectrum_antibiotics_prescriptions",
+            numerator="trimethoprim_prescriptions",
             denominator="nitrofurantoin_and_trimethoprim_prescriptions",
             group_by=["practice"]),
 
@@ -284,7 +284,6 @@ measures = [
     ## Record of a coded infection clinical event on same day as an antibiotic
 
 ]
-
 
 
 
