@@ -20,7 +20,7 @@ actions:
         cohort: output/input*.csv
 
   generate_measure_population:
-    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2019-01-01 to today by month" --skip-existing --output-dir=output/measures
+    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2019-09-01 to today by month" --skip-existing --output-dir=output/measures
     outputs:
       highly_sensitive:
         cohort: output/measures/input*.csv
@@ -40,8 +40,8 @@ actions:
         cohort: output/figures/broad_spectrum_proportion_decile_chart.png
 
   plot_trimethoprim_nitrofurantoin_deciles:
-    run: python:latest python analysis/plot_deciles.py trimethoprim_prescriptions
+    run: python:latest python analysis/plot_deciles.py trimethoprim_prescription_proportion
     needs: [generate_measures]
     outputs:
       moderately_sensitive:
-        cohort: output/figures/trimethoprim_prescriptions_decile_chart.png
+        cohort: output/figures/trimethoprim_prescription_proportion_decile_chart.png

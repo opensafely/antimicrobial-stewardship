@@ -57,7 +57,7 @@ measures_broad_spectrum <- read_csv(
   )
 
 measures_trimethoprim <- read_csv(
-  here::here("output", "measures", "measure_trimethoprim_prescriptions.csv"),
+  here::here("output", "measures", "measure_trimethoprim_prescription_proportion.csv"),
   col_types = cols_only(
     
     # Identifier

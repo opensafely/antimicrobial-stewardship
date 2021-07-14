@@ -266,7 +266,7 @@ measures = [
             group_by=["practice"]),
 
     ## Nitrofurantoin/Trimethoprim
-    Measure(id="trimethoprim_prescriptions",
+    Measure(id="trimethoprim_prescription_proportion",
             numerator="trimethoprim_prescriptions",
             denominator="nitrofurantoin_and_trimethoprim_prescriptions",
             group_by=["practice"]),
