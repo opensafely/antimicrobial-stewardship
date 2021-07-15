@@ -1,0 +1,58 @@
+{
+  "files": {
+    "user-MillieGreen-delayed-prescriptions-for-antibiotics.csv": {
+      "id": "user/MillieGreen/delayed-prescriptions-for-antibiotics/2c778793",
+      "url": "https://codelists.opensafely.org/codelist/user/MillieGreen/delayed-prescriptions-for-antibiotics/2c778793/",
+      "downloaded_at": "2021-06-14 11:15:02.758270Z",
+      "sha": "d23ebb95191736df17477ac77ca76f75b2e97f12"
+    },
+    "user-MillieGreen-infection-tmp.csv": {
+      "id": "user/MillieGreen/infection-tmp/1bdef989",
+      "url": "https://codelists.opensafely.org/codelist/user/MillieGreen/infection-tmp/1bdef989/",
+      "downloaded_at": "2021-06-14 11:15:03.662593Z",
+      "sha": "e294d62239dec1ca6367bf722b94618daa4f6481"
+    },
+    "primis-covid19-vacc-uptake-longres.csv": {
+      "id": "primis-covid19-vacc-uptake/longres/v1",
+      "url": "https://codelists.opensafely.org/codelist/primis-covid19-vacc-uptake/longres/v1/",
+      "downloaded_at": "2021-06-11 12:31:13.723622Z",
+      "sha": "4d4c94b9c6aa267c6a60657150bbc5ec7d2d7625"
+    },
+    "nhsd-primary-care-domain-refsets-ld_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/ld_cod/20210127",
+      "url": "https://codelists.opensafely.org/codelist/nhsd-primary-care-domain-refsets/ld_cod/20210127/",
+      "downloaded_at": "2021-06-11 12:31:14.288095Z",
+      "sha": "0c5bc3b050a55c2090e16932fd7364a0be775cb4"
+    },
+    "nhsd-primary-care-domain-refsets-mh_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/mh_cod/20210127",
+      "url": "https://codelists.opensafely.org/codelist/nhsd-primary-care-domain-refsets/mh_cod/20210127/",
+      "downloaded_at": "2021-06-11 12:31:14.677719Z",
+      "sha": "6e98da3c8765354b47ab74d1bef4679966a337f3"
+    },
+    "opensafely-co-amoxiclav-cephalosporins-and-quinolones.csv": {
+      "id": "opensafely/co-amoxiclav-cephalosporins-and-quinolones/3e2c0578",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/co-amoxiclav-cephalosporins-and-quinolones/3e2c0578/",
+      "downloaded_at": "2021-06-28 14:01:23.996328Z",
+      "sha": "30133cec10771a2027648359a1f0eb0ce6ed6317"
+    },
+    "opensafely-trimethoprim-and-nitrofurantoin.csv": {
+      "id": "opensafely/trimethoprim-and-nitrofurantoin/251c9243",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/trimethoprim-and-nitrofurantoin/251c9243/",
+      "downloaded_at": "2021-06-28 14:33:40.609454Z",
+      "sha": "4af6569869550c9daaf0c24f07941fcdc4d3daf1"
+    },
+    "opensafely-trimethoprim.csv": {
+      "id": "opensafely/trimethoprim/0c0d1f0e",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/trimethoprim/0c0d1f0e/",
+      "downloaded_at": "2021-06-28 14:33:41.005662Z",
+      "sha": "cceecec83823c8663c40aaaf0c5158fded8a21ec"
+    },
+    "opensafely-antibacterials.csv": {
+      "id": "opensafely/antibacterials/27089eaa",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/antibacterials/27089eaa/",
+      "downloaded_at": "2021-07-02 09:08:32.113198Z",
+      "sha": "f3c280d89cff832ee287f1b66a5042794f2fda27"
+    }
+  }
+}
