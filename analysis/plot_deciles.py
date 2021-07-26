@@ -31,7 +31,7 @@ df.rename(columns={'value':f'{measure_id}'},inplace=True)
 #df.broad_spectrum_proportion = np.percentile(df['broad_spectrum_proportion'].values,(10*np.arange(0,11)))
 
 deciles = df.groupby('date')[f'{measure_id}']\
-            .quantile(np.arange(0,1.1,0.1))\
+            .quantile(np.arange(0.1,1,0.1))\
             .reset_index()\
             .rename(columns={'level_1':'decile'})\
             .set_index('date')\

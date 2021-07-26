@@ -100,24 +100,3 @@ decile_plot_measures_broad_spectrum <- plot_decile(data = data_plot_brad_spectru
 ### Trimethoprim
 decile_plot_measures_trimethoprim <- plot_decile(data = data_plot_trimethoprim, 
                                                    ylab = "Measure of trimethoprim as a proportion of prescribing of nitrofurantoin and trimethoprim")
-
-
-
-
-
-
-prochlorperazine <-  ggplot(data_incident_groups, aes(x = date, y = prochlorperazine, colour = group, linetype = `Number of patients with first prescriptions`)) +
-  geom_line() +
-  facet_wrap(~group, scales = "free") +
-  theme_bw() +
-  theme(legend.position = "bottom") +
-  guides(colour=FALSE, linetype = guide_legend(nrow = 2)) +
-  ylab("Total number of patients issued first prescription of \n prochlorperazine antipsychotics, per month") +
-  xlab("") +
-  scale_x_date(date_breaks = "3 month", date_labels =  "%b %Y") +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1))
-
-ggsave(filename=here::here("output", "figures", "plot_first_prochlorperazine.svg"),
-       prochlorperazine,
-       units = "cm", width = 40, height = 20
-)
