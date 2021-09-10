@@ -12,10 +12,6 @@
 from cohortextractor import (
     StudyDefinition,
     patients,
-    codelist_from_csv,
-    codelist,
-    filter_codes_by_category,
-    combine_codelists,
     Measure
 )
 
@@ -262,30 +258,19 @@ study = StudyDefinition(
 
 
 # --- DEFINE MEASURES ---
+groups = ['practice','age','sex','care_home','region','imd','serious_mental_illness','learning_disability']
 
 measures = [
     ## Broad spectrum antibiotics
     Measure(id="broad_spectrum_proportion",
             numerator="broad_spectrum_antibiotics_prescriptions",
             denominator="antibacterial_prescriptions",
-            group_by=["practice"]),
+            group_by=groups),
 
     ## Nitrofurantoin/Trimethoprim
     Measure(id="trimethoprim_prescription_proportion",
             numerator="trimethoprim_prescriptions",
             denominator="nitrofurantoin_and_trimethoprim_prescriptions",
-            group_by=["practice"]),
-
-    ## Delayed prescriptions for antibiotics
-    # Measure(
-    #     id="ld_antipsychotics_first_gen",
-    #     numerator="antipsychotics_first_gen",
-    #     denominator="population",
-    #     group_by=["practice", "antipsychotics_first_gen_event_code"]
-    # ),
-
-    ## Consultations with GP result in a antibiotic
-
-    ## Record of a coded infection clinical event on same day as an antibiotic
+            group_by=groups),
 
 ]
