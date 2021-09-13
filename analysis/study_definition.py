@@ -12,10 +12,28 @@
 from cohortextractor import StudyDefinition, patients, Measure
 
 ## Import codelists from codelist.py (which pulls them from the codelist folder)
-from codelists import *
+from codelists import (
+    antibacterials_codes,
+    infection_codes,
+    learning_disability_codes,
+    broad_spectrum_antibiotics_codes,
+    carehome_primis_codes,
+    trimethoprim_codes,
+    nitrofurantoin_and_trimethoprim_codes,
+    delayed_antibiotics_prescriptions_codes,
+    serious_mental_illness_codes,
+)
 
 ## Import measures config (also used in analysis scripts)
 from measures import measures_kwargs
+
+## Import pivot helper functions
+from study_definition_functions import (
+    pivot_clinical_event_dates,
+    pivot_clinical_event_codes,
+    pivot_medication_event_codes,
+    pivot_medication_event_dates,
+)
 
 # DEFINE STUDY POPULATION ---
 
@@ -24,6 +42,14 @@ from datetime import datetime
 
 start_date = "2019-01-01"
 end_date = datetime.today().strftime("%Y-%m-%d")
+
+## Pivoted infection variables
+infection_date_variables = pivot_clinical_event_dates("infection", infection_codes, 5)
+infection_code_variables = pivot_clinical_event_codes("infection",infection_codes,5)
+
+## Pivoted medication variables
+antibacterials_date_variables = pivot_medication_event_dates("antibiotic",antibacterials_codes,5)
+antibacterials_code_variables = pivot_medication_event_codes("antibiotic",antibacterials_codes,5)
 
 ## Define study population and variables
 study = StudyDefinition(
@@ -120,21 +146,14 @@ study = StudyDefinition(
     ),
     ## Consultations with GP result in a antibiotic
     ## Record of a coded infection clinical event on same day as an antibiotic
-    infection=patients.with_these_medications(
-        infection_codes,
-        between=["index_date", "last_day_of_month(index_date)"],
-        returning="binary_flag",
-        return_expectations={"incidence": 0.5},
-    ),
-    infection_event_code=patients.with_these_medications(
-        infection_codes,
-        between=["index_date", "last_day_of_month(index_date)"],
-        returning="code",
-        return_expectations={
-            "category": {"ratios": {str(322149009): 0.8, str(322144004): 0.2}},
-        },
-    ),
+    **infection_date_variables,
+    **infection_code_variables,
+    **antibacterials_date_variables,
+    **antibacterials_code_variables,
+    
     ## Course Duration (not currently possible)
+
+
     ## Demographic and clinical sub-groups
     ### Age
     age=patients.age_as_of(
