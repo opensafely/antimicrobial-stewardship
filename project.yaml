@@ -8,7 +8,7 @@
 version: '3.0'
 
 expectations:
-  population_size: 1000000
+  population_size: 3000
 
 actions:
 
@@ -25,23 +25,9 @@ actions:
       highly_sensitive:
         cohort: output/measures/input*.csv
 
-  generate_measures:
-    run: cohortextractor:latest generate_measures --study-definition study_definition --skip-existing --output-dir=output/measures
+  plot_measure_deciles:
+    run: jupyter:latest jupyter nbconvert  /workspace/analysis/plot_deciles.ipynb --execute --to html --output-dir=/workspace/output --ExecutePreprocessor.timeout=86400
     needs: [generate_measure_population]
     outputs:
       moderately_sensitive:
-        measure_csv: output/measures/measure_*.csv
-
-  plot_broad_spec_deciles:
-    run: python:latest python analysis/plot_deciles.py broad_spectrum_proportion
-    needs: [generate_measures]
-    outputs:
-      moderately_sensitive:
-        cohort: output/figures/broad_spectrum_proportion_decile_chart.png
-
-  plot_trimethoprim_nitrofurantoin_deciles:
-    run: python:latest python analysis/plot_deciles.py trimethoprim_prescription_proportion
-    needs: [generate_measures]
-    outputs:
-      moderately_sensitive:
-        cohort: output/figures/trimethoprim_prescription_proportion_decile_chart.png
+        notebook: output/plot_deciles.html 

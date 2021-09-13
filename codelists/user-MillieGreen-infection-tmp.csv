@@ -1816,7 +1816,7 @@ code,term
 232427004,Vincent's laryngitis
 232434002,Chronic fungal laryngitis
 23247008,Primary extrapulmonary coccidioidomycosis
-23257009,Infection caused by Paragonimus westermanii
+23257009,Infection caused by Paragonimus westermani
 23291008,Herpes simplex meningitis
 233598009,Acute bacterial bronchitis
 233599001,Acute mycoplasmal bronchitis
@@ -2582,7 +2582,7 @@ code,term
 240879002,Infestation of subcutaneous tissue caused by fly larvae
 240880004,Infestation of wound caused by fly larvae
 240894003,Demodex folliculitis
-240897005,Cheyletiella dermatitis
+240897005,Dermatitis due to Cheyletiella infestation
 240899008,Cat mite infestation
 240901004,Rat mite infestation
 240902006,Mouse mite infestation
@@ -4420,7 +4420,7 @@ code,term
 423092005,Multidrug resistant tuberculosis
 423271002,Infection caused by Streptococcus group G
 423322005,Recurrent obstructive pyelonephritis
-423333008,Exanthem caused by chicken pox
+423333008,Exanthem due to varicella
 42338000,Salmonella gastroenteritis
 423391007,Genital herpes simplex type 2
 423405007,Herpes simplex subepithelial infiltrates
@@ -4508,7 +4508,7 @@ code,term
 42849000,Trypanosomal chancre
 42852008,Infectious lymphocytosis
 428592003,Infection caused by Brucella ovis
-428633000,Exanthem caused by herpes zoster
+428633000,Exanthem due to herpes zoster
 428635007,Primary viral encephalitis
 428638009,Encephalitis caused by Herpesvirus
 428697002,Inactive tuberculosis of lung
@@ -6299,7 +6299,7 @@ code,term
 762281000,Hypertrophic pachymeningitis due to infection
 762283002,Ecthyma caused by Staphylococcus aureus
 762284008,Cellulitis caused by Staphylococcus aureus
-762375006,Erythema multiforme caused by virus
+762375006,Erythema multiforme due to viral disease
 762528007,Sepsis caused by Klebsiella pneumoniae
 762529004,Sepsis caused by Acinetobacter baumannii
 762530009,Ascending lymphangitis caused by bacterium
@@ -6658,7 +6658,7 @@ code,term
 838301001,Bladder disorder caused by Schistosoma
 838302008,Bladder disorder caused by Schistosoma japonicum
 838315004,Encephalomyelitis caused by Burkholderia
-838317007,Bursitis due to late syphilis
+838317007,Bursitis caused by late syphilis
 838338001,Bacterial infection due to human immunodeficiency virus infection
 838351006,Acute seizure due to infection of central nervous system
 838353009,Acute pyelonephritis caused by bacterium

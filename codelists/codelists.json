@@ -9,8 +9,8 @@
     "user-MillieGreen-infection-tmp.csv": {
       "id": "user/MillieGreen/infection-tmp/1bdef989",
       "url": "https://codelists.opensafely.org/codelist/user/MillieGreen/infection-tmp/1bdef989/",
-      "downloaded_at": "2021-06-14 11:15:03.662593Z",
-      "sha": "e294d62239dec1ca6367bf722b94618daa4f6481"
+      "downloaded_at": "2021-09-08 10:06:06.845037Z",
+      "sha": "b753d146689870409b965597eda6db01d9a474d2"
     },
     "primis-covid19-vacc-uptake-longres.csv": {
       "id": "primis-covid19-vacc-uptake/longres/v1",
