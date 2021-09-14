@@ -48,8 +48,8 @@ infection_date_variables = pivot_clinical_event_dates("infection", infection_cod
 infection_code_variables = pivot_clinical_event_codes("infection",infection_codes,5)
 
 ## Pivoted antibiotics variables
-antibiotics_date_variables = pivot_medication_event_dates("antibiotic",antibacterials_codes,5)
-antibiotics_code_variables = pivot_medication_event_codes("antibiotic",antibacterials_codes,5)
+antibiotics_date_variables = pivot_medication_event_dates("antibiotic_prescription",antibacterials_codes,5)
+antibiotics_code_variables = pivot_medication_event_codes("antibiotic_prescription",antibacterials_codes,5)
 
 ## Define study population and variables
 study = StudyDefinition(
@@ -90,7 +90,7 @@ study = StudyDefinition(
     ),
     ## Measures
     ## All antibacterials
-    antibiotics_prescriptions=patients.with_these_medications(
+    antibiotic_prescriptions=patients.with_these_medications(
         antibacterials_codes,
         between=["index_date", "last_day_of_month(index_date)"],
         returning="number_of_matches_in_period",

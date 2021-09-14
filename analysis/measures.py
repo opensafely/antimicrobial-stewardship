@@ -13,7 +13,7 @@ measures_kwargs = [
     {
         "id": "broad_spectrum_proportion",
         "numerator": "broad_spectrum_antibiotics_prescriptions",
-        "denominator": "antibacterial_prescriptions",
+        "denominator": "antibiotic_prescriptions",
         "group_by": groups,
     },
     {
