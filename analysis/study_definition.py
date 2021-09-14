@@ -47,9 +47,9 @@ end_date = datetime.today().strftime("%Y-%m-%d")
 infection_date_variables = pivot_clinical_event_dates("infection", infection_codes, 5)
 infection_code_variables = pivot_clinical_event_codes("infection",infection_codes,5)
 
-## Pivoted medication variables
-antibacterials_date_variables = pivot_medication_event_dates("antibiotic",antibacterials_codes,5)
-antibacterials_code_variables = pivot_medication_event_codes("antibiotic",antibacterials_codes,5)
+## Pivoted antibiotics variables
+antibiotics_date_variables = pivot_medication_event_dates("antibiotic",antibacterials_codes,5)
+antibiotics_code_variables = pivot_medication_event_codes("antibiotic",antibacterials_codes,5)
 
 ## Define study population and variables
 study = StudyDefinition(
@@ -90,7 +90,7 @@ study = StudyDefinition(
     ),
     ## Measures
     ## All antibacterials
-    antibacterial_prescriptions=patients.with_these_medications(
+    antibiotics_prescriptions=patients.with_these_medications(
         antibacterials_codes,
         between=["index_date", "last_day_of_month(index_date)"],
         returning="number_of_matches_in_period",
@@ -146,10 +146,19 @@ study = StudyDefinition(
     ),
     ## Consultations with GP result in a antibiotic
     ## Record of a coded infection clinical event on same day as an antibiotic
+    infections = patients.with_these_clinical_events(infection_codes,
+        between=["index_date", "last_day_of_month(index_date)"],
+         returning="number_of_matches_in_period",
+        return_expectations={
+            "int": {"distribution": "normal", "mean": 3, "stddev": 1},
+            "incidence": 0.5,
+        },
+    ),
+
     **infection_date_variables,
     **infection_code_variables,
-    **antibacterials_date_variables,
-    **antibacterials_code_variables,
+    **antibiotics_date_variables,
+    **antibiotics_code_variables,
     
     ## Course Duration (not currently possible)
 
