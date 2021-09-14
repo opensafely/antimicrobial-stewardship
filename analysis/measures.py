@@ -22,4 +22,16 @@ measures_kwargs = [
         "denominator": "nitrofurantoin_and_trimethoprim_prescriptions",
         "group_by": groups,
     },
+    {
+        "id":"infection_match_proportion",
+        "numerator":"infection_match_count",
+        "denominator":"infections",
+        "group_by": groups,
+    },
+    {
+        "id":"antibiotic_match_proportion",
+        "numerator":"antibiotic_prescription_match_count",
+        "denominator":"antibiotic_prescriptions",
+        "group_by": groups,
+    },
 ]
