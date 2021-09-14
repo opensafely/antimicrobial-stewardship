@@ -10,7 +10,7 @@ parser.add_argument('measure_id')
 args=parser.parse_args()
 measure_id = args.measure_id
 
-df = pd.read_csv(f'output/measures/measure_{measure_id}.csv')
+df = pd.read_csv(f'output/measures/measure_{measure_id}.csv.gz')
 
 df.date= pd.to_datetime(df.date)
 df.rename(columns={'value':f'{measure_id}'},inplace=True)

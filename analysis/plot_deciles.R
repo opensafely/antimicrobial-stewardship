@@ -38,7 +38,7 @@ ggplot(data, aes(x = date, y = value)) +
 
 ## Import data
 measures_broad_spectrum <- read_csv(
-  here::here("output", "measures", "measure_broad_spectrum_proportion.csv"),
+  here::here("output", "measures", "measure_broad_spectrum_proportion.csv.gz"),
   col_types = cols_only(
     
     # Identifier
@@ -57,7 +57,7 @@ measures_broad_spectrum <- read_csv(
   )
 
 measures_trimethoprim <- read_csv(
-  here::here("output", "measures", "measure_trimethoprim_prescription_proportion.csv"),
+  here::here("output", "measures", "measure_trimethoprim_prescription_proportion.csv.gz"),
   col_types = cols_only(
     
     # Identifier
