@@ -14,16 +14,16 @@ actions:
 
   # Extract data ----
   generate_study_population:
-    run: cohortextractor:latest generate_cohort --study-definition study_definition --skip-existing --output-dir=output
+    run: cohortextractor:latest generate_cohort --study-definition study_definition --skip-existing --output-dir=output --output-format=csv.gz
     outputs:
       highly_sensitive:
-        cohort: output/input*.csv
+        cohort: output/input*.csv.gz
 
   generate_measure_population:
-    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2019-09-01 to today by month" --skip-existing --output-dir=output/measures
+    run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2019-09-01 to today by month" --skip-existing --output-dir=output/measures --output-format=csv.gz
     outputs:
       highly_sensitive:
-        cohort: output/measures/input*.csv
+        cohort: output/measures/input*.csv.gz
 
   plot_measure_deciles:
     run: jupyter:latest jupyter nbconvert  /workspace/analysis/plot_deciles.ipynb --execute --to html --output-dir=/workspace/output --ExecutePreprocessor.timeout=86400
