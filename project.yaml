@@ -26,14 +26,14 @@ actions:
         cohort: output/measures/input*.csv.gz
 
   calculate_measures:
-    run: python:latest analysis/calculate_measures.py
+    run: python:latest python analysis/calculate_measures.py
     needs: [generate_measure_population]
     outputs:
       highly_sensitive:
         measures: output/measures/measure_*.csv.gz
 
   plot_measure_deciles:
-    run: python:latest analysis/plot_deciles.py
+    run: python:latest python analysis/plot_deciles.py
     needs: [calculate_measures]
     outputs:
       moderately_sensitive:
