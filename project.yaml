@@ -25,9 +25,16 @@ actions:
       highly_sensitive:
         cohort: output/measures/input*.csv.gz
 
-  plot_measure_deciles:
-    run: jupyter:latest jupyter nbconvert  /workspace/analysis/plot_deciles.ipynb --execute --to html --output-dir=/workspace/output --ExecutePreprocessor.timeout=86400
+  calculate_measures:
+    run: python:latest analysis/calculate_measures.py
     needs: [generate_measure_population]
     outputs:
+      highly_sensitive:
+        measures: output/measures/measure_*.csv.gz
+
+  plot_measure_deciles:
+    run: python:latest analysis/plot_deciles.py
+    needs: [calculate_measures]
+    outputs:
       moderately_sensitive:
-        notebook: output/plot_deciles.html 
+        figures: output/figures/*.png

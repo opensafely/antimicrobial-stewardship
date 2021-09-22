@@ -1,56 +1,69 @@
+from ebmdatalab import charts
 import pandas as pd
-import numpy as np
+from os import path
+from measures import measures_kwargs
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
-import os
-import argparse
-
-parser = argparse.ArgumentParser(description='provide the id of the measure to be plotted')
-parser.add_argument('measure_id')
-args=parser.parse_args()
-measure_id = args.measure_id
-
-df = pd.read_csv(f'output/measures/measure_{measure_id}.csv.gz')
-
-df.date= pd.to_datetime(df.date)
-df.rename(columns={'value':f'{measure_id}'},inplace=True)
-
-# ## Ensure count columns are actually integers, and cast as such
-# nonint_count = len(df[df[f].broad_spectrum_antibiotics_prescriptions-np.abs(df.broad_spectrum_antibiotics_prescriptions) > 0])
-# if (nonint_count >0):
-#     raise ValueError(f'non-integer values for counts of broad_spectrum_antibiotics_prescriptions: {nonint_count} rows affected')
-
-# nonint_count = len(df[df.antibacterial_prescriptions-np.abs(df.antibacterial_prescriptions) > 0])
-# if (nonint_count >0):
-#     raise ValueError(f'non-integer values for counts of antibacterial_prescriptions: {nonint_count} rows affected')
-
-# df.broad_spectrum_antibiotics_prescriptions = df.broad_spectrum_antibiotics_prescriptions.astype(np.int32)
-# df.antibacterial_prescriptions = df.antibacterial_prescriptions.astype(np.int32)
-
-## replace dummy data with values in expected range
-#df.broad_spectrum_proportion = np.percentile(df['broad_spectrum_proportion'].values,(10*np.arange(0,11)))
-
-deciles = df.groupby('date')[f'{measure_id}']\
-            .quantile(np.arange(0.1,1,0.1))\
-            .reset_index()\
-            .rename(columns={'level_1':'decile'})\
-            .set_index('date')\
-            .pivot(columns='decile',values=f'{measure_id}')\
-            .rename(columns=lambda c: round(c,1))
+import matplotlib.gridspec as gridspec
 
 
-plt.rcParams['figure.figsize']=(15,10)
-dfmt =mdates.DateFormatter("%b %Y")
-for decile in deciles.columns:
-    ls = '-' if decile==0.5 else '--'
-    plt.plot(deciles[decile].index,deciles[decile].values,c='b',linestyle=ls)
-
-plt.ylabel(f'{measure_id}')
-plt.xlabel('Month')
-plt.xticks(rotation=90)
+def load_data(measure, group):
+    return pd.read_csv(
+        path.join("output", "measures", f'measure_{measure["id"]}_{group}.csv.gz'),
+        parse_dates=['date']
+    )
 
 
-if not os.path.exists('output/figures'):
-    os.makedirs('output/figures')
+def plot_decile_group(df, group, measure):
 
-plt.savefig(f'output/figures/{measure_id}_decile_chart.png')
+    if group:
+        group_values = df[group].drop_duplicates()
+        n_groups = len(group_values)
+    else:
+        n_groups = 1
+    fig = plt.figure(figsize=(12, 8 * n_groups))
+    fig.autofmt_xdate()
+    layout = gridspec.GridSpec(n_groups, 1, figure=fig)
+    if group:
+        for groupval, lax in zip(group_values, layout):
+            ax = plt.subplot(lax)
+            title = (
+                f'{measure["id"].replace("_"," ").title()}'
+                + f" - {group.title()}:{groupval}"
+            )
+            charts.deciles_chart(
+                df=df[df[group] == groupval],
+                period_column="date",
+                column=measure["id"],
+                title=title,
+                ax=ax,
+            )
+    else:
+        ax = plt.subplot(layout[0])
+        title = f'{measure["id"].replace("_"," ").title()}'
+        charts.deciles_chart(
+            df=df,
+            period_column="date",
+            column=measure["id"],
+            title=title,
+            ax=ax,
+        )
+    return fig
+
+
+def main():
+    plt.ioff()
+    plt.rcParams.update({"figure.max_open_warning": 0})
+    for measure in measures_kwargs:
+        df = load_data(measure=measure, group=None)
+        fig = plot_decile_group(df=df, group=None, measure=measure)
+        plt.savefig(path.join('output','figures',f'{measure["id"]}.png'))
+        plt.close(fig)
+        for group in [g for g in measure["group_by"] if g!="practice"]:
+            df = load_data(measure=measure, group=group)
+            fig = plot_decile_group(df=df, group=group, measure=measure)
+            plt.savefig(path.join('output','figures',f'{measure["id"]}_{group}.png'))
+            plt.close(fig)
+
+
+if __name__ == "__main__":
+    main()
