@@ -99,7 +99,7 @@ def calculate(df, date):
 def combine(measure_files):
     fmgd = {
         x[0]: {"measure": x[2], "group": x[3], "date": x[1]}
-        for x in [[mf] + mf.replace(".csv.gz", "").split("~") for mf in measure_files]
+        for x in [[mf] + path.split(mf)[1].replace(".csv.gz", "").split("~") for mf in measure_files]
     }
     measures = set([v["measure"] for v in fmgd.values()])
     groups = set([v["group"] for v in fmgd.values()])
