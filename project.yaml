@@ -31,6 +31,8 @@ actions:
     outputs:
       highly_sensitive:
         measures: output/measures/measure_*.csv.gz
+      moderately_sensitive:
+        pivot_stats: output/measures/pivotstats_*.csv
 
   plot_measure_deciles:
     run: python:latest python analysis/plot_deciles.py
