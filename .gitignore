@@ -3,7 +3,10 @@ model.log
 */input.csv
 __pycache__
 .python-version
-output/*
+output/**
 metadata/*
 venv/
 .vscode/*
+!output/*/
+!output/.gitkeep
+!output/*/.gitkeep
