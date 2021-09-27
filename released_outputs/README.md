@@ -32,3 +32,4 @@
     * [output/figures/trimethoprim_prescription_proportion_care_home.png](output/figures/trimethoprim_prescription_proportion_care_home.png)
     * [output/figures/trimethoprim_prescription_proportion_decile_chart.png](output/figures/trimethoprim_prescription_proportion_decile_chart.png)
     * [output/figures/trimethoprim_prescription_proportion_imd.png](output/figures/trimethoprim_prescription_proportion_imd.png)
+    * [output/figures/trimethoprim_prescription_proportion_learning_disability.png](output/figures/trimethoprim_prescription_proportion_learning_disability.png)
