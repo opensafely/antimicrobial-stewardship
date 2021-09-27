@@ -129,7 +129,7 @@ def combine(measure_files):
 def write_pivot_stats(pivot_stats):
     df = pd.DataFrame.from_dict(pivot_stats)
     df.to_csv(
-        path.join("output", "measures", f"pivotstats_{datetime.now().isoformat()}.csv")
+        path.join("output", "measures", f"pivotstats_{datetime.now().isoformat().replace(':','_')}.csv")
     )
 
 
