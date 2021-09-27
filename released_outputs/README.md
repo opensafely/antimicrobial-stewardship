@@ -4,6 +4,7 @@
   * output/figures
     * [output/figures/antibiotic_match_proportion.png](output/figures/antibiotic_match_proportion.png)
     * [output/figures/antibiotic_match_proportion_age_band.png](output/figures/antibiotic_match_proportion_age_band.png)
+    * [output/figures/antibiotic_match_proportion_care_home.png](output/figures/antibiotic_match_proportion_care_home.png)
     * [output/figures/antibiotic_match_proportion_imd.png](output/figures/antibiotic_match_proportion_imd.png)
     * [output/figures/antibiotic_match_proportion_learning_disability.png](output/figures/antibiotic_match_proportion_learning_disability.png)
     * [output/figures/antibiotic_match_proportion_region.png](output/figures/antibiotic_match_proportion_region.png)
