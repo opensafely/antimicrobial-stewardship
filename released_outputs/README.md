@@ -20,4 +20,5 @@
     * [output/figures/broad_spectrum_proportion_serious_mental_illness.png](output/figures/broad_spectrum_proportion_serious_mental_illness.png)
     * [output/figures/broad_spectrum_proportion_sex.png](output/figures/broad_spectrum_proportion_sex.png)
     * [output/figures/infection_match_proportion.png](output/figures/infection_match_proportion.png)
+    * [output/figures/infection_match_proportion_age_band.png](output/figures/infection_match_proportion_age_band.png)
     * [output/figures/trimethoprim_prescription_proportion_decile_chart.png](output/figures/trimethoprim_prescription_proportion_decile_chart.png)
