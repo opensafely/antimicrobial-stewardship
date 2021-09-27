@@ -31,3 +31,4 @@
     * [output/figures/trimethoprim_prescription_proportion_age_band.png](output/figures/trimethoprim_prescription_proportion_age_band.png)
     * [output/figures/trimethoprim_prescription_proportion_care_home.png](output/figures/trimethoprim_prescription_proportion_care_home.png)
     * [output/figures/trimethoprim_prescription_proportion_decile_chart.png](output/figures/trimethoprim_prescription_proportion_decile_chart.png)
+    * [output/figures/trimethoprim_prescription_proportion_imd.png](output/figures/trimethoprim_prescription_proportion_imd.png)
