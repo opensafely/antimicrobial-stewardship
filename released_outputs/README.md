@@ -27,4 +27,5 @@
     * [output/figures/infection_match_proportion_region.png](output/figures/infection_match_proportion_region.png)
     * [output/figures/infection_match_proportion_serious_mental_illness.png](output/figures/infection_match_proportion_serious_mental_illness.png)
     * [output/figures/infection_match_proportion_sex.png](output/figures/infection_match_proportion_sex.png)
+    * [output/figures/trimethoprim_prescription_proportion.png](output/figures/trimethoprim_prescription_proportion.png)
     * [output/figures/trimethoprim_prescription_proportion_decile_chart.png](output/figures/trimethoprim_prescription_proportion_decile_chart.png)
