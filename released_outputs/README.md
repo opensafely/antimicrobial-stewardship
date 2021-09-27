@@ -8,5 +8,6 @@
     * [output/figures/antibiotic_match_proportion_learning_disability.png](output/figures/antibiotic_match_proportion_learning_disability.png)
     * [output/figures/antibiotic_match_proportion_region.png](output/figures/antibiotic_match_proportion_region.png)
     * [output/figures/antibiotic_match_proportion_serious_mental_illness.png](output/figures/antibiotic_match_proportion_serious_mental_illness.png)
+    * [output/figures/antibiotic_match_proportion_sex.png](output/figures/antibiotic_match_proportion_sex.png)
     * [output/figures/broad_spectrum_proportion_decile_chart.png](output/figures/broad_spectrum_proportion_decile_chart.png)
     * [output/figures/trimethoprim_prescription_proportion_decile_chart.png](output/figures/trimethoprim_prescription_proportion_decile_chart.png)
