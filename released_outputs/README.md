@@ -17,4 +17,5 @@
     * [output/figures/broad_spectrum_proportion_imd.png](output/figures/broad_spectrum_proportion_imd.png)
     * [output/figures/broad_spectrum_proportion_learning_disability.png](output/figures/broad_spectrum_proportion_learning_disability.png)
     * [output/figures/broad_spectrum_proportion_region.png](output/figures/broad_spectrum_proportion_region.png)
+    * [output/figures/broad_spectrum_proportion_serious_mental_illness.png](output/figures/broad_spectrum_proportion_serious_mental_illness.png)
     * [output/figures/trimethoprim_prescription_proportion_decile_chart.png](output/figures/trimethoprim_prescription_proportion_decile_chart.png)
