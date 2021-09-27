@@ -34,3 +34,4 @@
     * [output/figures/trimethoprim_prescription_proportion_imd.png](output/figures/trimethoprim_prescription_proportion_imd.png)
     * [output/figures/trimethoprim_prescription_proportion_learning_disability.png](output/figures/trimethoprim_prescription_proportion_learning_disability.png)
     * [output/figures/trimethoprim_prescription_proportion_region.png](output/figures/trimethoprim_prescription_proportion_region.png)
+    * [output/figures/trimethoprim_prescription_proportion_serious_mental_illness.png](output/figures/trimethoprim_prescription_proportion_serious_mental_illness.png)
