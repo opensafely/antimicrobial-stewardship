@@ -19,6 +19,19 @@ actions:
   #     highly_sensitive:
   #       cohort: output/input*.csv.gz
 
+  generate_nitro_trim_population:
+    run: cohortextractor:latest generate_cohort --study-definition study_definition_nitro_trim --skip-existing --output-dir=output --output-format=csv.gz
+    outputs:
+      highly_sensitive:
+        cohort: output/input*.csv.gz
+
+  calculate_nitro_trim_ratio:
+    run: python:latest python analysis/calculate_nitro_trim_ratio.py
+    needs: [generate_nitro_trim_population]
+    outputs:
+      moderately_sensitive:
+        ratios: output/nitro_trim_ratio.csv
+
   generate_measure_population:
     run: cohortextractor:latest generate_cohort --study-definition study_definition --index-date-range "2019-09-01 to today by month" --skip-existing --output-dir=output/measures --output-format=csv.gz
     outputs:
