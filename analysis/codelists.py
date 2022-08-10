@@ -10,7 +10,7 @@
 # --- IMPORT STATEMENTS ---
 
 ## Import code building blocks from cohort extractor package
-from cohortextractor import (codelist, codelist_from_csv, combine_codelists)
+from cohortextractor import (codelist_from_csv, combine_codelists)
 
 
 # --- CODELISTS ---
@@ -77,3 +77,18 @@ antibacterials_codes= codelist_from_csv(
   system = "snomed",
   column = "dmd_id"
 )
+
+## BRIT codelists
+brit_nitrofurantoin = codelist_from_csv(
+  "codelists/user-yayang-codes_ab_type_nitrofurantoincsv.csv",
+  system = "snomed",
+  column = "dmd_id"
+)
+
+brit_trimethoprim = codelist_from_csv(
+  "codelists/user-yayang-codes_ab_type_trimethoprimcsv.csv",
+  system = "snomed",
+  column = "dmd_id"
+)
+
+brit_nitrofurantoin_trimethoprim = combine_codelists(brit_trimethoprim,brit_nitrofurantoin)
