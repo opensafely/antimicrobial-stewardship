@@ -5,6 +5,8 @@ from cohortextractor import StudyDefinition, patients
 from codelists import (
     trimethoprim_codes,
     nitrofurantoin_and_trimethoprim_codes,
+    brit_trimethoprim,
+    brit_nitrofurantoin_trimethoprim
 )
 
 # DEFINE STUDY POPULATION ---
@@ -26,10 +28,16 @@ study = StudyDefinition(
     # Define the study population
     population=patients.satisfying(
         """
-        has_nitro_trim_prescription
+        has_nitro_trim_prescription OR
+        has_BRIT_nitro_trim_prescription
         """,
         has_nitro_trim_prescription = patients.with_these_medications(
             nitrofurantoin_and_trimethoprim_codes,
+            between=[start_date,end_date],
+            returning="binary_flag"
+        ),
+        has_BRIT_nitro_trim_prescription = patients.with_these_medications(
+            brit_nitrofurantoin_trimethoprim,
             between=[start_date,end_date],
             returning="binary_flag"
         ),
@@ -48,6 +56,26 @@ study = StudyDefinition(
     ## Trimethoprim
     trimethoprim_prescriptions=patients.with_these_medications(
         trimethoprim_codes,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="number_of_matches_in_period",
+        return_expectations={
+            "int": {"distribution": "normal", "mean": 3, "stddev": 1},
+            "incidence": 0.5,
+        },
+    ),
+
+    BRIT_nitrofurantoin_and_trimethoprim_prescriptions=patients.with_these_medications(
+        brit_nitrofurantoin_trimethoprim,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="number_of_matches_in_period",
+        return_expectations={
+            "int": {"distribution": "normal", "mean": 3, "stddev": 1},
+            "incidence": 0.5,
+        },
+    ),
+    ## Trimethoprim
+    BRIT_trimethoprim_prescriptions=patients.with_these_medications(
+        brit_trimethoprim,
         between=["index_date", "last_day_of_month(index_date)"],
         returning="number_of_matches_in_period",
         return_expectations={

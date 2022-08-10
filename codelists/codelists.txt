@@ -7,3 +7,5 @@ opensafely/co-amoxiclav-cephalosporins-and-quinolones/3e2c0578
 opensafely/trimethoprim-and-nitrofurantoin/251c9243
 opensafely/trimethoprim/0c0d1f0e
 opensafely/antibacterials/27089eaa
+user/yayang/codes_ab_type_trimethoprimcsv/1653d5a9
+user/yayang/codes_ab_type_nitrofurantoincsv/56b72f70
