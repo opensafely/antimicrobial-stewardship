@@ -65,6 +65,18 @@
       "url": "https://codelists.opensafely.org/codelist/user/yayang/codes_ab_type_nitrofurantoincsv/56b72f70/",
       "downloaded_at": "2022-08-10 12:46:50.375263Z",
       "sha": "64017f7918b0c9e25ccdf6ce9290882c5a5f8a83"
+    },
+    "user-jon_massey-nitrofurantoin-vtm-based-drugs.csv": {
+      "id": "user/jon_massey/nitrofurantoin-vtm-based-drugs/542135d8",
+      "url": "https://codelists.opensafely.org/codelist/user/jon_massey/nitrofurantoin-vtm-based-drugs/542135d8/",
+      "downloaded_at": "2022-08-10 19:11:44.083490Z",
+      "sha": "b35c6447b6456ebf00acbf89c6c53f432500b8c3"
+    },
+    "user-jon_massey-trimethoprim-ingredient-based-drugs.csv": {
+      "id": "user/jon_massey/trimethoprim-ingredient-based-drugs/3b11c2a3",
+      "url": "https://codelists.opensafely.org/codelist/user/jon_massey/trimethoprim-ingredient-based-drugs/3b11c2a3/",
+      "downloaded_at": "2022-08-10 19:11:44.360233Z",
+      "sha": "2ee4ae1bbeab7428cc88b6f02054df92e52d7367"
     }
   }
 }

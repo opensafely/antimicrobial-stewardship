@@ -5,8 +5,12 @@ from cohortextractor import StudyDefinition, patients
 from codelists import (
     trimethoprim_codes,
     nitrofurantoin_and_trimethoprim_codes,
-    brit_trimethoprim,
-    brit_nitrofurantoin_trimethoprim
+    BRIT_trimethoprim,
+    BRIT_nitrofurantoin_trimethoprim,
+    BRIT_nitrofurantoin,
+    jm_nitrofurantoin_trimethoprim,
+    jm_nitrofurantoin,
+    jm_trimethoprim
 )
 
 # DEFINE STUDY POPULATION ---
@@ -29,15 +33,20 @@ study = StudyDefinition(
     population=patients.satisfying(
         """
         has_nitro_trim_prescription OR
-        has_BRIT_nitro_trim_prescription
+        has_jm_nitro_trim_prescription
         """,
         has_nitro_trim_prescription = patients.with_these_medications(
             nitrofurantoin_and_trimethoprim_codes,
             between=[start_date,end_date],
             returning="binary_flag"
         ),
-        has_BRIT_nitro_trim_prescription = patients.with_these_medications(
-            brit_nitrofurantoin_trimethoprim,
+        has_jm_nitro_trim_prescription = patients.with_these_medications(
+            jm_nitrofurantoin_trimethoprim,
+            between=[start_date,end_date],
+            returning="binary_flag"
+        ),
+        has_JM_nitro_trim_prescription = patients.with_these_medications(
+            jm_nitrofurantoin_trimethoprim,
             between=[start_date,end_date],
             returning="binary_flag"
         ),
@@ -64,8 +73,36 @@ study = StudyDefinition(
         },
     ),
 
+    jm_nitrofurantoin_and_trimethoprim_prescriptions=patients.with_these_medications(
+        jm_nitrofurantoin_trimethoprim,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="number_of_matches_in_period",
+        return_expectations={
+            "int": {"distribution": "normal", "mean": 3, "stddev": 1},
+            "incidence": 0.5,
+        },
+    ),
+    ## Trimethoprim
+    jm_trimethoprim_prescriptions=patients.with_these_medications(
+        jm_trimethoprim,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="number_of_matches_in_period",
+        return_expectations={
+            "int": {"distribution": "normal", "mean": 3, "stddev": 1},
+            "incidence": 0.5,
+        },
+    ),
+    jm_nitrofurantoin_prescriptions=patients.with_these_medications(
+        jm_nitrofurantoin,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="number_of_matches_in_period",
+        return_expectations={
+            "int": {"distribution": "normal", "mean": 3, "stddev": 1},
+            "incidence": 0.5,
+        },
+    ),
     BRIT_nitrofurantoin_and_trimethoprim_prescriptions=patients.with_these_medications(
-        brit_nitrofurantoin_trimethoprim,
+        BRIT_nitrofurantoin_trimethoprim,
         between=["index_date", "last_day_of_month(index_date)"],
         returning="number_of_matches_in_period",
         return_expectations={
@@ -75,7 +112,16 @@ study = StudyDefinition(
     ),
     ## Trimethoprim
     BRIT_trimethoprim_prescriptions=patients.with_these_medications(
-        brit_trimethoprim,
+        BRIT_trimethoprim,
+        between=["index_date", "last_day_of_month(index_date)"],
+        returning="number_of_matches_in_period",
+        return_expectations={
+            "int": {"distribution": "normal", "mean": 3, "stddev": 1},
+            "incidence": 0.5,
+        },
+    ),
+    BRIT_nitrofurantoin_prescriptions=patients.with_these_medications(
+        BRIT_nitrofurantoin,
         between=["index_date", "last_day_of_month(index_date)"],
         returning="number_of_matches_in_period",
         return_expectations={

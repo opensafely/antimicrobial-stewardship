@@ -7,11 +7,19 @@ trimethoprim_proportion = trimethoprim_prescriptions/nitrofurantoin_and_trimetho
 
 BRIT_nitrofurantoin_and_trimethoprim_prescriptions = df_input['BRIT_nitrofurantoin_and_trimethoprim_prescriptions'].sum()
 BRIT_trimethoprim_prescriptions = df_input['BRIT_trimethoprim_prescriptions'].sum()
+BRIT_nitrofurantoin_prescriptions = df_input['BRIT_nitrofurantoin_prescriptions'].sum()
 BRIT_trimethoprim_proportion = BRIT_trimethoprim_prescriptions/BRIT_nitrofurantoin_and_trimethoprim_prescriptions
+
+jm_nitrofurantoin_and_trimethoprim_prescriptions = df_input['jm_nitrofurantoin_and_trimethoprim_prescriptions'].sum()
+jm_trimethoprim_prescriptions = df_input['jm_trimethoprim_prescriptions'].sum()
+jm_nitrofurantoin_prescriptions = df_input['jm_nitrofurantoin_prescriptions'].sum()
+jm_trimethoprim_proportion = jm_trimethoprim_prescriptions/jm_nitrofurantoin_and_trimethoprim_prescriptions
+
 df_output = pd.DataFrame.from_dict(
-    { 'codelists': ['OS','BRIT'],
-    'nitrofurantoin_and_trimethoprim_prescriptions':[nitrofurantoin_and_trimethoprim_prescriptions,BRIT_nitrofurantoin_and_trimethoprim_prescriptions],
-    'trimethoprim_prescriptions':[trimethoprim_prescriptions,BRIT_trimethoprim_prescriptions],
-    'trimethoprim_proportion':[trimethoprim_proportion,BRIT_trimethoprim_proportion],
+    { 'codelists': ['OS','BRIT',"JM"],
+    'nitrofurantoin_and_trimethoprim_prescriptions':[nitrofurantoin_and_trimethoprim_prescriptions,BRIT_nitrofurantoin_and_trimethoprim_prescriptions,jm_trimethoprim_prescriptions],
+    'nitrofurantoin_prescriptions':[nitrofurantoin_and_trimethoprim_prescriptions-trimethoprim_prescriptions,BRIT_nitrofurantoin_prescriptions, jm_nitrofurantoin_prescriptions],
+    'trimethoprim_prescriptions':[trimethoprim_prescriptions,BRIT_trimethoprim_prescriptions,jm_trimethoprim_prescriptions],
+    'trimethoprim_proportion':[trimethoprim_proportion,BRIT_trimethoprim_proportion,jm_trimethoprim_proportion],
     })
 df_output.to_csv('output/nitro_trim_ratio.csv',index=False)
