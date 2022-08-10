@@ -9,3 +9,5 @@ opensafely/trimethoprim/0c0d1f0e
 opensafely/antibacterials/27089eaa
 user/yayang/codes_ab_type_trimethoprimcsv/1653d5a9
 user/yayang/codes_ab_type_nitrofurantoincsv/56b72f70
+user/jon_massey/nitrofurantoin-vtm-based-drugs/542135d8/
+user/jon_massey/trimethoprim-ingredient-based-drugs/3b11c2a3/

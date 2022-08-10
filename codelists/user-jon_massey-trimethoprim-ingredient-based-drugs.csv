@@ -1,0 +1,135 @@
+dmd_id,dmd_name,dmd_type,type
+324430000,Trimethoprim 100mg tablets,vmp,Trimethoprim-only
+324431001,Trimethoprim 200mg tablets,vmp,Trimethoprim-only
+324357002,Co-trimoxazole 80mg/400mg tablets,vmp,Trimethoprim + Sulfamethoxazole
+324359004,Co-trimoxazole 160mg/800mg tablets,vmp,Trimethoprim + Sulfamethoxazole
+39022311000001100,Trimethoprim 50mg/5ml oral suspension sugar free,vmp,Trimethoprim-only
+36144011000001106,Trimethoprim 100mg/5ml solution for injection ampoules,vmp,Trimethoprim-only
+324362001,Co-trimoxazole 80mg/400mg/5ml oral suspension,vmp,Trimethoprim + Sulfamethoxazole
+3653911000001100,Co-trimoxazole 80mg/400mg/5ml solution for infusion ampoules,vmp,Trimethoprim + Sulfamethoxazole
+35313211000001104,Co-trimoxazole 40mg/200mg/5ml oral suspension sugar free,vmp,Trimethoprim + Sulfamethoxazole
+36017511000001105,"Polymyxin B 10,000units/ml / Trimethoprim 1mg/ml eye drops",vmp,Trimethoprim + Polymyxin B sulfate
+36091911000001107,Co-trimoxazole 160mg/800mg/10ml solution for infusion ampoules,vmp,Trimethoprim + Sulfamethoxazole
+13374611000001102,Trimethoprim 200mg/5ml oral suspension,vmp,Trimethoprim-only
+13374811000001103,Trimethoprim 20mg/5ml oral suspension,vmp,Trimethoprim-only
+13375011000001108,Trimethoprim 240mg/5ml oral suspension,vmp,Trimethoprim-only
+13375211000001103,Trimethoprim 7mg/5ml oral suspension,vmp,Trimethoprim-only
+13374511000001101,Trimethoprim 200mg/5ml oral solution,vmp,Trimethoprim-only
+13374711000001106,Trimethoprim 20mg/5ml oral solution,vmp,Trimethoprim-only
+13374911000001108,Trimethoprim 240mg/5ml oral solution,vmp,Trimethoprim-only
+13375111000001109,Trimethoprim 7mg/5ml oral solution,vmp,Trimethoprim-only
+36017411000001106,"Polymyxin B 10,000units/g / Trimethoprim 5mg/g eye ointment",vmp,Trimethoprim + Polymyxin B sulfate
+710811000001108,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+121511000001103,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+250811000001106,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+9800011000001105,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+15199811000001106,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+16070411000001101,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+17865911000001106,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+28917911000001104,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+30106111000001102,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+39921811000001107,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+40487211000001107,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+6038911000001109,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+897711000001103,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+426711000001103,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+46511000001102,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+10414811000001100,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+21906211000001102,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+30942111000001106,Trimethoprim 100mg tablets,amp,Trimethoprim-only
+426411000001109,Monotrim 100mg tablets,amp,Trimethoprim-only
+431211000001104,Trimopan 100mg tablets,amp,Trimethoprim-only
+38080911000001105,Trimogal 100mg tablets,amp,Trimethoprim-only
+339211000001107,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+187211000001100,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+416811000001104,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+112111000001106,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+9799411000001106,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+16071011000001101,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+17866111000001102,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+20170611000001102,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+28988711000001102,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+30106311000001100,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+39922011000001109,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+40487411000001106,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+15911000001106,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+664011000001104,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+490311000001109,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+6039711000001103,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+10415011000001105,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+21906411000001103,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+30942311000001108,Trimethoprim 200mg tablets,amp,Trimethoprim-only
+95811000001102,Monotrim 200mg tablets,amp,Trimethoprim-only
+329711000001102,Trimopan 200mg tablets,amp,Trimethoprim-only
+38081511000001105,Trimogal 200mg tablets,amp,Trimethoprim-only
+17536411000001104,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+688711000001107,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+517111000001104,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+812711000001104,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+17889311000001105,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+23858211000001109,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+26776811000001104,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+28922511000001104,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+29826011000001104,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+32281711000001103,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+38859111000001108,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+40598711000001105,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+802611000001106,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+14942811000001103,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+21942611000001109,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+34958511000001104,Co-trimoxazole 80mg/400mg tablets,amp,Trimethoprim + Sulfamethoxazole
+659211000001100,Septrin tablets,amp,Trimethoprim + Sulfamethoxazole
+37686511000001103,Co-trimoxazole 160mg/800mg tablets,amp,Trimethoprim + Sulfamethoxazole
+26777411000001104,Co-trimoxazole 160mg/800mg tablets,amp,Trimethoprim + Sulfamethoxazole
+30994911000001107,Co-trimoxazole 160mg/800mg tablets,amp,Trimethoprim + Sulfamethoxazole
+32278611000001106,Co-trimoxazole 160mg/800mg tablets,amp,Trimethoprim + Sulfamethoxazole
+32506211000001109,Co-trimoxazole 160mg/800mg tablets,amp,Trimethoprim + Sulfamethoxazole
+37232311000001104,Co-trimoxazole 160mg/800mg tablets,amp,Trimethoprim + Sulfamethoxazole
+37896711000001101,Co-trimoxazole 160mg/800mg tablets,amp,Trimethoprim + Sulfamethoxazole
+38859311000001105,Co-trimoxazole 160mg/800mg tablets,amp,Trimethoprim + Sulfamethoxazole
+34958311000001105,Co-trimoxazole 160mg/800mg tablets,amp,Trimethoprim + Sulfamethoxazole
+764411000001104,Septrin Forte 160mg/800mg tablets,amp,Trimethoprim + Sulfamethoxazole
+665011000001100,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+543111000001101,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+13627411000001101,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+15200311000001106,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+17865711000001109,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+17962411000001102,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+30835311000001106,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+39922211000001104,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+40201811000001101,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+733211000001109,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+845811000001106,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+15861911000001105,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+22387811000001109,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+30941811000001108,Trimethoprim 50mg/5ml oral suspension sugar free,amp,Trimethoprim-only
+789611000001100,Monotrim 50mg/5ml oral suspension,amp,Trimethoprim-only
+735011000001103,Monotrim 100mg/5ml solution for injection ampoules,amp,Trimethoprim-only
+32280411000001100,Co-trimoxazole 80mg/400mg/5ml oral suspension,amp,Trimethoprim + Sulfamethoxazole
+32501811000001100,Co-trimoxazole 80mg/400mg/5ml oral suspension,amp,Trimethoprim + Sulfamethoxazole
+32507511000001109,Co-trimoxazole 80mg/400mg/5ml oral suspension,amp,Trimethoprim + Sulfamethoxazole
+96711000001102,Septrin Adult 80mg/400mg/5ml oral suspension,amp,Trimethoprim + Sulfamethoxazole
+32519811000001101,Co-trimoxazole 80mg/400mg/5ml solution for infusion ampoules,amp,Trimethoprim + Sulfamethoxazole
+3625511000001107,Co-trimoxazole 80mg/400mg/5ml solution for infusion ampoules,amp,Trimethoprim + Sulfamethoxazole
+3625711000001102,Co-trimoxazole 80mg/400mg/5ml solution for infusion ampoules,amp,Trimethoprim + Sulfamethoxazole
+3626311000001106,Co-trimoxazole 80mg/400mg/5ml solution for infusion ampoules,amp,Trimethoprim + Sulfamethoxazole
+3626011000001108,Septrin for Infusion 80mg/400mg/5ml solution for infusion ampoules,amp,Trimethoprim + Sulfamethoxazole
+37711311000001109,Co-trimoxazole 40mg/200mg/5ml oral suspension sugar free,amp,Trimethoprim + Sulfamethoxazole
+37717711000001104,Co-trimoxazole 40mg/200mg/5ml oral suspension sugar free,amp,Trimethoprim + Sulfamethoxazole
+32431411000001103,Co-trimoxazole 40mg/200mg/5ml oral suspension sugar free,amp,Trimethoprim + Sulfamethoxazole
+32501611000001104,Co-trimoxazole 40mg/200mg/5ml oral suspension sugar free,amp,Trimethoprim + Sulfamethoxazole
+32505711000001105,Co-trimoxazole 40mg/200mg/5ml oral suspension sugar free,amp,Trimethoprim + Sulfamethoxazole
+37232111000001101,Co-trimoxazole 40mg/200mg/5ml oral suspension sugar free,amp,Trimethoprim + Sulfamethoxazole
+38859611000001100,Co-trimoxazole 40mg/200mg/5ml oral suspension sugar free,amp,Trimethoprim + Sulfamethoxazole
+3757311000001102,Septrin Paediatric 40mg/200mg/5ml oral suspension,amp,Trimethoprim + Sulfamethoxazole
+3844411000001103,Polytrim eye drops,amp,Trimethoprim + Polymyxin B sulfate
+7817111000001101,Co-trimoxazole 160mg/800mg/10ml solution for infusion ampoules,amp,Trimethoprim + Sulfamethoxazole
+13361311000001101,Trimethoprim 200mg/5ml oral suspension,amp,Trimethoprim-only
+13361711000001102,Trimethoprim 20mg/5ml oral suspension,amp,Trimethoprim-only
+13362311000001105,Trimethoprim 240mg/5ml oral suspension,amp,Trimethoprim-only
+13362611000001100,Trimethoprim 7mg/5ml oral suspension,amp,Trimethoprim-only
+13363211000001108,Trimethoprim 200mg/5ml oral solution,amp,Trimethoprim-only
+13363511000001106,Trimethoprim 20mg/5ml oral solution,amp,Trimethoprim-only
+13363811000001109,Trimethoprim 240mg/5ml oral solution,amp,Trimethoprim-only
+13364111000001100,Trimethoprim 7mg/5ml oral solution,amp,Trimethoprim-only
+3846211000001107,Polytrim ophthalmic ointment,amp,Trimethoprim + Polymyxin B sulfate
