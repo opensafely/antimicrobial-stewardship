@@ -33,19 +33,20 @@ study = StudyDefinition(
     population=patients.satisfying(
         """
         has_nitro_trim_prescription OR
-        has_jm_nitro_trim_prescription
+        has_jm_nitro_trim_prescription OR
+        has_BRIT_notri_trim_prescription
         """,
         has_nitro_trim_prescription = patients.with_these_medications(
             nitrofurantoin_and_trimethoprim_codes,
             between=[start_date,end_date],
             returning="binary_flag"
         ),
-        has_jm_nitro_trim_prescription = patients.with_these_medications(
-            jm_nitrofurantoin_trimethoprim,
+        has_BRIT_nitro_trim_prescription = patients.with_these_medications(
+            BRIT_nitrofurantoin_trimethoprim,
             between=[start_date,end_date],
             returning="binary_flag"
         ),
-        has_JM_nitro_trim_prescription = patients.with_these_medications(
+        has_jm_nitro_trim_prescription = patients.with_these_medications(
             jm_nitrofurantoin_trimethoprim,
             between=[start_date,end_date],
             returning="binary_flag"
