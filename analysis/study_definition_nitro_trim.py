@@ -56,7 +56,7 @@ study = StudyDefinition(
     ## Nitrofurantoin and trimethoprim
     nitrofurantoin_and_trimethoprim_prescriptions=patients.with_these_medications(
         nitrofurantoin_and_trimethoprim_codes,
-        between=["index_date", "last_day_of_month(index_date)"],
+        between=[start_date,end_date],
         returning="number_of_matches_in_period",
         return_expectations={
             "int": {"distribution": "normal", "mean": 3, "stddev": 1},
@@ -66,7 +66,7 @@ study = StudyDefinition(
     ## Trimethoprim
     trimethoprim_prescriptions=patients.with_these_medications(
         trimethoprim_codes,
-        between=["index_date", "last_day_of_month(index_date)"],
+        between=[start_date,end_date],
         returning="number_of_matches_in_period",
         return_expectations={
             "int": {"distribution": "normal", "mean": 3, "stddev": 1},
@@ -76,7 +76,7 @@ study = StudyDefinition(
 
     jm_nitrofurantoin_and_trimethoprim_prescriptions=patients.with_these_medications(
         jm_nitrofurantoin_trimethoprim,
-        between=["index_date", "last_day_of_month(index_date)"],
+        between=[start_date,end_date],
         returning="number_of_matches_in_period",
         return_expectations={
             "int": {"distribution": "normal", "mean": 3, "stddev": 1},
@@ -86,7 +86,7 @@ study = StudyDefinition(
     ## Trimethoprim
     jm_trimethoprim_prescriptions=patients.with_these_medications(
         jm_trimethoprim,
-        between=["index_date", "last_day_of_month(index_date)"],
+        between=[start_date,end_date],
         returning="number_of_matches_in_period",
         return_expectations={
             "int": {"distribution": "normal", "mean": 3, "stddev": 1},
@@ -95,7 +95,7 @@ study = StudyDefinition(
     ),
     jm_nitrofurantoin_prescriptions=patients.with_these_medications(
         jm_nitrofurantoin,
-        between=["index_date", "last_day_of_month(index_date)"],
+        between=[start_date,end_date],
         returning="number_of_matches_in_period",
         return_expectations={
             "int": {"distribution": "normal", "mean": 3, "stddev": 1},
@@ -104,7 +104,7 @@ study = StudyDefinition(
     ),
     BRIT_nitrofurantoin_and_trimethoprim_prescriptions=patients.with_these_medications(
         BRIT_nitrofurantoin_trimethoprim,
-        between=["index_date", "last_day_of_month(index_date)"],
+        between=[start_date,end_date],
         returning="number_of_matches_in_period",
         return_expectations={
             "int": {"distribution": "normal", "mean": 3, "stddev": 1},
@@ -114,7 +114,7 @@ study = StudyDefinition(
     ## Trimethoprim
     BRIT_trimethoprim_prescriptions=patients.with_these_medications(
         BRIT_trimethoprim,
-        between=["index_date", "last_day_of_month(index_date)"],
+        between=[start_date,end_date],
         returning="number_of_matches_in_period",
         return_expectations={
             "int": {"distribution": "normal", "mean": 3, "stddev": 1},
@@ -123,7 +123,7 @@ study = StudyDefinition(
     ),
     BRIT_nitrofurantoin_prescriptions=patients.with_these_medications(
         BRIT_nitrofurantoin,
-        between=["index_date", "last_day_of_month(index_date)"],
+        between=[start_date,end_date],
         returning="number_of_matches_in_period",
         return_expectations={
             "int": {"distribution": "normal", "mean": 3, "stddev": 1},
