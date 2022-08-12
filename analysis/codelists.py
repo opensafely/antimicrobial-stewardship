@@ -92,7 +92,21 @@ BRIT_trimethoprim = codelist_from_csv(
   column = "dmd_id"
 )
 
+BRIT_broad_spectrum = codelist_from_csv(
+  "codelists/user-rriefu-broad-spectrum-antibiotics.csv",
+  system = "snomed",
+  column = "dmd_id"
+)
+
+BRIT_antibiotics = codelist_from_csv(
+  "codelists/user-rriefu-antibiotics_dmd.csv",
+  system = "snomed",
+  column = "dmd_id"
+)
+
 BRIT_nitrofurantoin_trimethoprim = combine_codelists(BRIT_trimethoprim,BRIT_nitrofurantoin)
+
+## JM reimplementations
 
 jm_trimethoprim = codelist_from_csv(
   "codelists/user-jon_massey-trimethoprim-ingredient-based-drugs.csv",
