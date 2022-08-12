@@ -19,6 +19,12 @@ actions:
   #     highly_sensitive:
   #       cohort: output/input*.csv.gz
 
+  check_broad_spec_codelists:
+    run: python:latest python analysis/check_broad_spec_codelists.py
+    outputs:
+      moderately_sensitive:
+        report: output/broad_spectrum_codelist_report.txt
+
   generate_broad_spec_population:
     run: cohortextractor:latest generate_cohort --study-definition study_definition_broad_spec --skip-existing --output-dir=output --output-format=csv.gz
     outputs:
