@@ -6,7 +6,9 @@ from codelists import (
     BRIT_broad_spectrum,
     BRIT_antibiotics,
     broad_spectrum_antibiotics_codes,
-    antibacterials_codes
+    antibacterials_codes,
+    Billy_broad_spectrum,
+    jm_ktt9
 )
 
 # DEFINE STUDY POPULATION ---
@@ -83,4 +85,26 @@ study = StudyDefinition(
             "incidence": 0.5,
         },
     ),
+    ## Billy
+    Billy_broad_spectrum_prescriptions=patients.with_these_medications(
+        Billy_broad_spectrum,
+        between=[start_date,end_date],
+        returning="number_of_matches_in_period",
+        return_expectations={
+            "int": {"distribution": "normal", "mean": 3, "stddev": 1},
+            "incidence": 0.5,
+        },
+    ),
+
+    ## JM Billy reimplemenation
+    jm_broad_spectrum_prescriptions=patients.with_these_medications(
+        jm_ktt9,
+        between=[start_date,end_date],
+        returning="number_of_matches_in_period",
+        return_expectations={
+            "int": {"distribution": "normal", "mean": 3, "stddev": 1},
+            "incidence": 0.5,
+        },
+    ),
+    
 )
