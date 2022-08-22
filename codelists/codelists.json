@@ -31,10 +31,10 @@
       "sha": "6e98da3c8765354b47ab74d1bef4679966a337f3"
     },
     "opensafely-co-amoxiclav-cephalosporins-and-quinolones.csv": {
-      "id": "opensafely/co-amoxiclav-cephalosporins-and-quinolones/3e2c0578",
-      "url": "https://codelists.opensafely.org/codelist/opensafely/co-amoxiclav-cephalosporins-and-quinolones/3e2c0578/",
-      "downloaded_at": "2021-06-28 14:01:23.996328Z",
-      "sha": "30133cec10771a2027648359a1f0eb0ce6ed6317"
+      "id": "opensafely/co-amoxiclav-cephalosporins-and-quinolones/7f4d3538",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/co-amoxiclav-cephalosporins-and-quinolones/7f4d3538/",
+      "downloaded_at": "2022-08-22 11:04:44.295098Z",
+      "sha": "b1118448ed57fb5b2598e642b2235537dd420f1e"
     },
     "opensafely-trimethoprim-and-nitrofurantoin.csv": {
       "id": "opensafely/trimethoprim-and-nitrofurantoin/251c9243",
@@ -49,10 +49,10 @@
       "sha": "cceecec83823c8663c40aaaf0c5158fded8a21ec"
     },
     "opensafely-antibacterials.csv": {
-      "id": "opensafely/antibacterials/27089eaa",
-      "url": "https://codelists.opensafely.org/codelist/opensafely/antibacterials/27089eaa/",
-      "downloaded_at": "2021-07-02 09:08:32.113198Z",
-      "sha": "f3c280d89cff832ee287f1b66a5042794f2fda27"
+      "id": "opensafely/antibacterials/01fff52f",
+      "url": "https://codelists.opensafely.org/codelist/opensafely/antibacterials/01fff52f/",
+      "downloaded_at": "2022-08-22 15:33:18.140052Z",
+      "sha": "56fb312525f167260205d5dfa8dea94e07627429"
     },
     "user-yayang-codes_ab_type_trimethoprimcsv.csv": {
       "id": "user/yayang/codes_ab_type_trimethoprimcsv/1653d5a9",
